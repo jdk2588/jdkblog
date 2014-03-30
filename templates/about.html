@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    {% block head %}
+    <title>{% block title %}{% endblock %} - My Webpage</title>
+    {% endblock %}
+  </head>
+  <body>
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+          <a class="blog-nav-item active" href="#">Home</a>
+          <a class="blog-nav-item" href="#">New features</a>
+          <a class="blog-nav-item" href="#">Press</a>
+          <a class="blog-nav-item" href="#">New hires</a>
+          <a class="blog-nav-item" href="#">About</a>
+        </nav>
+      </div>
+    </div>
+    <div class="container">
+      This is about page!
+    </div>
+  </body>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/blog.css') }}">
+</html>
