@@ -1,7 +1,8 @@
 from application import BaseApp
-from handlers import Handlers
+from admin import admin
+from about import about
 
 class Urls(BaseApp):
     def attach_urls(self):
-        self.app.add_url_rule("/", view_func=Handlers.root)
-        self.app.add_url_rule("/about", view_func=Handlers.about)
+        self.app.register_blueprint(about)
+        self.app.register_blueprint(admin)
