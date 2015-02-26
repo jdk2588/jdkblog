@@ -9,7 +9,7 @@ class Server(Urls):
 
     def __call__(self, *args, **kwargs):
         self.attach_urls()
-        self.app.run(*args, **kwargs)
+        self.app.run(host="0.0.0.0", port=8080, *args, **kwargs)
 
 if __name__ == "__main__":
     app = Server()
