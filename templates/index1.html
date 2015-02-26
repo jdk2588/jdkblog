@@ -1,1 +1,51 @@
-SocialWeb page1
+<!doctype html>
+<html>
+  <head>
+    <title>Jaideep Khandelwal</title>
+  </head>
+  <body>
+
+      <div class="site-wrapper">
+          <div class="site-wrapper-inner">
+              <div class="cover-container">
+                  <div class="masthead clearfix">
+                </div>
+            <div class="inner cover">
+
+                <div vocab="http://schema.org/" typeof="Person">
+                  <h1 property="name">Jaideep Khandelwal</h1>
+                  <h1 property="givenName">Jaideep </h1><h1 property="familyName">Khandelwal</h1>
+                  <p>Description: <span property="description">Master's student at <span property="affiliation">VU, Amsterdam</span></span></p>
+                  <p>Address: <span property="address">XXX, XXXX Uilenstede, Amstelveen</span></p>
+                  <p>Birth Date: <span property="birthDate">25-08-1988</span></p>
+                  <p>Birth Place: <span property="birthPlace">India, Rajasthan</span></p>
+                  <p>Nationality: <span property="nationality">Indian</span></p>
+                  <p>Height: <span property="height">180 cms</span></p>
+                  <p>Weight: <span property="weight">70 kgs</span></p>
+                  <p>Email: <span property="email" content="mailto:jdk2588@gmail.com">jdk2588@gmail.com</span></p>
+                  <p>Phone: <span property="telephone" content="tel:+31 645 000 000">+31 645 000 000</span></p>
+
+                  <p>Follows: <a property="follows" typeof="Person" href="https://twitter.com/sachin_rt"> <span property="name">Sachin Tendulkar</span></a></p>
+                <ul class="list">
+                  <li ><a property="knows" typeof="Person" href="https://www.facebook.com/manospavlidakis"> <span property="name">Manos Pavlidakis</span></a></li>
+                  <li ><a property="knows" typeof="Person" href="https://www.facebook.com/andreas.manios.9"><span property="name">Andreas Manios</span></a></li>
+                </ul>
+                </div>
+                <!-- <p>
+                <span property="name">Jaideep Khandelwal</span>,<br>
+                Phone: <a property="phone" href="tel:+31-645-000-000">+31 645 000 000</a>.</p>
+                <p>My colleagues:</p>		
+                <ul class="list">
+                  <li property="knows" typeof="Person"><a property="homepage" href="https://www.facebook.com/manospavlidakis"><span property="name">Manos Pavlidakis</span></a></li>
+                  <li property="knows" typeof="Person"><a property="homepage" href="https://www.facebook.com/andreas.manios.9"><span property="name">Andreas Manios</span></a></li>
+                </ul>
+                </p> -->
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+  </body>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/cover.css') }}">
+</html>
